@@ -1,3 +1,21 @@
+# Generative Adversarial Imputation Networks (GAIN) -- UNOFFICIAL TensorFlow2 implementation
+
+This is an UNOFFICIAL TF2 implementation of GAIN.
+All the usages are the same as those of the original one.
+
+### Note
+1. Since the order is dependent, we are not able to parallelize the GAN.
+   I've tried parallelizing it and the performance was a tragedy.
+2. The batch sampling is done by randomly pick examples for every iteration as how the original one do.
+   I've tried going through the whole shuffled dataset as an epoch and iterating a few epochs,
+   the performance seemed not to be as well as random sampling.
+3. The efficiency is worse than the TF1 version.
+   If you know why, please tell me. Thanks.
+
+If there is anything wrong or you have any suggestion, please contact me.
+Contact: alienncheng@gmail.com
+
+# Original README
 # Codebase for "Generative Adversarial Imputation Networks (GAIN)"
 
 Authors: Jinsung Yoon, James Jordon, Mihaela van der Schaar
